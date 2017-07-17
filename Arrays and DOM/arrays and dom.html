@@ -4,12 +4,14 @@
 	<title>Arrays and DOM</title>
 </head>
 <body>
+	<p id="text"></p>
 	<script type="text/javascript">
 		var fruits = ["apple", "orange", "kiwi"];
 		fruits.push(prompt("Add more fruit: "));
 		fruits.shift();
 		fruits.sort();
 		console.log(fruits.join(" with "));
+		document.getElementById("text").innerHTML = fruits.join(" with ");
 	</script>
 </body>
 </html>
