@@ -5,19 +5,30 @@
 </head>
 <body>
 	<script type="text/javascript">
+		//initialize three int variables 
 		var num1 = 54;
 		var num2 = 13;
 		var num3 = 97;
 
+		//create empty response variable
 		var response = "";
 
+		//compares all choice to num1
 		if(num1 > num2 && num1 > num3){
 			response = num1 + " is the largest number.";
-		}else if(num2 > num1 && num2 > num3){
+		}
+
+		//compares all choice to num2
+		else if(num2 > num1 && num2 > num3){
 			response = num2 + " is the largest number.";
-		}else{
+		}
+
+		//if num1 and num2 are not the largest num3 is
+		else{
 			response = num3 + " is the largest number.";
 		}
+
+		//displays response in console
 		console.log(response);
 
 	</script>

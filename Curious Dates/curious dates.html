@@ -5,13 +5,22 @@
 </head>
 <body>
 	<script type="text/javascript">
+		//initializes current date. The date is specified to maintain consistency 
 		var now = new Date("July 12, 2017 12:33:00");
+
+		//initializes future date
 		var future = new Date("August 2, 2017 12:29:59");
 
+		//finds difference of years
 		var years = Math.abs(future.getFullYear() - now.getFullYear());
+
+		//finds difference of months
 		var months = Math.abs(future.getMonth() - now.getMonth());
+
+		//finds difference of days
 		var days = Math.abs(future.getDay() - now.getDay());
 		
+		//displays result to console
 		console.log("From", now, "there are", years, "years,", months, "months and", days, "days until", future);
 	</script>
 </body>

@@ -6,11 +6,22 @@
 <body>
 	<p id="text"></p>
 	<script type="text/javascript">
+		//created a list using square brackets []
 		var fruits = ["apple", "orange", "kiwi"];
+
+		//used a prompt to receive user input and push to add user input to list 
 		fruits.push(prompt("Add more fruit: "));
+
+		//removes first item on list 
 		fruits.shift();
+
+		//sorts elements in list by ascii values
 		fruits.sort();
+
+		//displays list with the word " with " between each fruit on console
 		console.log(fruits.join(" with "));
+
+		//displays list with the word " with " between each fruit element on webpage
 		document.getElementById("text").innerHTML = fruits.join(" with ");
 	</script>
 </body>
