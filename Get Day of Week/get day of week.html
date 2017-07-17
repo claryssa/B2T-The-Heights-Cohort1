@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Day of Week</title>
+</head>
+<body>
+	<h1 id="text"></h1>
+	<script type="text/javascript">
+		//initializes date variable with current date
+		var date = new Date();
+
+		//created switch statement to determine day of the week. Checks for day of week based on index of weekdays 0 = Sunday to 6 = Saturday
+		switch(date.getDay()){
+			case 0:
+				//this repeated line of code is used to get the h1 element created in the HTML document then it writes what comes after the equal sign in quotes
+				document.getElementById("text").innerHTML = "It's Sunday!";
+				break;
+			case 1:
+				document.getElementById("text").innerHTML = "It's Monday!";
+				break;
+			case 2:
+				document.getElementById("text").innerHTML = "It's Tuesday!";
+				break;
+			case 3:
+				document.getElementById("text").innerHTML = "It's Wednesday!";
+				break;
+			case 4:
+				document.getElementById("text").innerHTML = "It's Thursday!";
+				break;
+			case 5:
+				document.getElementById("text").innerHTML = "It's Friday!";
+				break;
+			case 6:
+				document.getElementById("text").innerHTML = "It's Saturday!";
+				break;
+		}
+	</script>
+</body>
+</html>
