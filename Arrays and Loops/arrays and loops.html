@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays and Loops</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//given arrays 
+			var color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+			var o = ["th", "st", "nd", "rd"];
+			
+			//creates for loop
+			for(var i = 1; i < color.length; i++){
+				//if statement accounts for first, second, third and fourth
+				if(i < 4){
+					console.log(i + o[i] + " choice is " + color[i]);
+				}
+				//else statement accounts for all other places such as fifth and sixth etc
+				else{
+					console.log(i + o[1] + " choice is " + color[i]);
+				}
+			}
+		</script>
+	</body>
+</html>
