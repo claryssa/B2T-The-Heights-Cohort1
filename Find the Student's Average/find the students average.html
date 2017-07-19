@@ -6,15 +6,18 @@
 <body>
 	<script type="text/javascript">
 		//given student grade lsit 
-		var grade = [80, 77, 88, 95, 68];
+		var grades = [80, 77, 88, 95, 68];
 		var total = 0;
 
+		//for loop to get each grade in the array
 		for (var i = 0; i < grade.length; i++) {
-			total += grade[i];
+			total += grades[i];
 		}
 
-		var avg = total/grade.length;
+		//calculates average of grades array
+		var avg = total/grades.length;
 
+		//gives letter grade for array avg
 		if(avg <= 60){
 			console.log("Letter grade: F")
 		}
