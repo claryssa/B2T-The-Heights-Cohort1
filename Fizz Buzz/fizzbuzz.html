@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fizz Buzz</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//initialize count variable
+		var count = 0;
+
+		//create while loop with the condition to stop at count being equal to 100
+		while(count <= 100){
+			//check if count value is a multiple of 3 and 5
+			if(count%3 == 0 && count%5 == 0){
+				console.log("Fizz Buzz");
+			}
+			//check if count value is a multiple of 3
+			else if(count%3 == 0){
+				console.log("Fizz");
+			}
+			//check if count value is a multiple of 5
+			else if(count%5 == 0){
+				console.log("Buzz");
+			}
+			//is not a multiple of 3 and or 5 then count value gets printed anyway
+			else{
+				console.log(count + " ")
+			}
+			//increments the count variable
+			count++;
+		}
+	</script>
+</body>
+</html>
