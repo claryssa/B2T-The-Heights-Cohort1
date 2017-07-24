@@ -10,14 +10,15 @@
 			var o = ["th", "st", "nd", "rd"];
 			
 			//creates for loop
-			for(var i = 1; i < color.length; i++){
+			for(var i = 0; i < color.length; i++){
 				//if statement accounts for first, second, third and fourth
-				if(i < 4){
-					console.log(i + o[i] + " choice is " + color[i]);
+				
+				if(i < 3){
+					console.log((i+1) + o[i+1] + " choice is " + color[i]);
 				}
 				//else statement accounts for all other places such as fifth and sixth etc
 				else{
-					console.log(i + o[1] + " choice is " + color[i]);
+					console.log((i+1) + o[0] + " choice is " + color[i]);
 				}
 			}
 		</script>
