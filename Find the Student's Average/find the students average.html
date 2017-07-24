@@ -7,30 +7,29 @@
 	<script type="text/javascript">
 		//given student grade lsit 
 		var grades = [80, 77, 88, 95, 68];
-		var total = 0;
+		var total;
 
 		//for loop to get each grade in the array
-		for (var i = 0; i < grade.length; i++) {
+		for (var i = 0; i < grades.length; i++) {
 			total += grades[i];
 		}
 
+		console.log(total);
+		console.log(parseInt(total/(grades.length)));
+
 		//calculates average of grades array
-		var avg = total/grades.length;
+		var avg = parseInt(total/(grades.length));
 
 		//gives letter grade for array avg
 		if(avg <= 60){
 			console.log("Letter grade: F")
-		}
-		else if(60 < avg <= 69){
+		}else if(60 < avg <= 69){
 			console.log("Letter grade: D")
-		}
-		else if(70 <= avg <= 79){
+		}else if(70 <= avg <= 79){
 			console.log("Letter grade: C")
-		}
-		else if(80 <= avg <= 89){
+		}else if(80 <= avg <= 89){
 			console.log("Letter grade: B")
-		}
-		else{
+		}else{
 			console.log("Letter grade: A")
 		}
 	</script>
