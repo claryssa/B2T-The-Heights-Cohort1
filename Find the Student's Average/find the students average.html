@@ -7,15 +7,10 @@
 	<script type="text/javascript">
 		//given student grade lsit 
 		var grades = [80, 77, 88, 95, 68];
-		var total;
+		var total = 0;
 
 		//for loop to get each grade in the array
-		for (var i = 0; i < grades.length; i++) {
-			total += grades[i];
-		}
-
-		console.log(total);
-		console.log(parseInt(total/(grades.length)));
+		for (var i in grades) { total += grades[i]; }
 
 		//calculates average of grades array
 		var avg = parseInt(total/(grades.length));
