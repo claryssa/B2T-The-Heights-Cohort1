@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using Data Types with DOM</title>
+</head>
+
+<body>
+	<!--Created h1 tag to write into using JavaScript-->
+	<h1>Hello my name is</h1> <h1 id="name"></h1>
+	
+	<script type="text/javascript">
+		//receive prompt from user
+		var name = prompt("Enter name ");
+		//write into the h1 tag created
+		document.getElementById("name").innerHTML = name;
+	</script>
+</body>
+</html>
